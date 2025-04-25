@@ -8,6 +8,9 @@
     --font-title: "Russo One", sans-serif;
     --font-text: "Roboto", sans-serif;
     --font-link: "Archivo Narrow", sans-serif;
+    --vermelho: #B80000;
+    --vermelho-escuro: #5A0000;
+    --branco-osso: #eeeeee;
 }
 
 * {
@@ -17,14 +20,72 @@
     margin: 0;
 }
 
+body {
+    background: var(--branco-osso);
+}
+
 header {
-    background: #ff00002d;
+    border: 1px solid #000;
 }
 
-main {
-    background: #00800046;
+.head-title {
+    padding-block: 10px;
+    text-align: center;
+    border: 1px solid #000;
 }
 
-footer {
-    background: #0000ff38;
+.head-title h1 {
+    font-family: var(--font-title);
+    font-size: 2.5em;
+    color: #d30303;
 }
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    padding-block: 5px;
+    list-style: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var(--vermelho);
+}
+
+.hero {
+    height: 90vh;
+    background: #000 url(../imagens/hero-back.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom top;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 101vh;
+}
+
+.about h2 {
+    padding-block-end: 40px;
+    font-size: 2.2em;
+    color: var(--vermelho-escuro);
+}
+
+.about p {
+    width: 30%;
+    padding-block: 3px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.about strong {
+    color: var(--vermelho);
+}
+
+.
