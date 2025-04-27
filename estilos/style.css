@@ -1,91 +1,73 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --font-title: "Russo One", sans-serif;
-    --font-text: "Roboto", sans-serif;
-    --font-link: "Archivo Narrow", sans-serif;
-    --vermelho: #B80000;
-    --vermelho-escuro: #5A0000;
-    --branco-osso: #eeeeee;
+    --font-title: "Roboto", sans-serif;
 }
 
 * {
-    font-family: var(--font-text);
-    box-sizing: border-box;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-}
-
-body {
-    background: var(--branco-osso);
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    border: 1px solid #000;
-}
-
-.head-title {
-    padding-block: 10px;
     text-align: center;
-    border: 1px solid #000;
 }
 
-.head-title h1 {
+.menu-title {
+    padding-block: 5px;
+}
+
+.menu-title h1 {
     font-family: var(--font-title);
-    font-size: 2.5em;
-    color: #d30303;
+    font-size: 3em;
+}
+
+.menu-nav {
+    border: 1px solid #000;
 }
 
 .menu-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 60px;
+    padding: 10px;
 
-    padding-block: 5px;
     list-style: none;
 }
 
-.menu-item a {
+.menu-list a {
     text-decoration: none;
-    color: var(--vermelho);
+    color: #000;
+}
+
+main {
+  
 }
 
 .hero {
-    height: 90vh;
-    background: #000 url(../imagens/hero-back.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom top;
-}
+    height: 95vh;
 
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 101vh;
-}
-
-.about h2 {
-    padding-block-end: 40px;
-    font-size: 2.2em;
-    color: var(--vermelho-escuro);
-}
-
-.about p {
-    width: 30%;
-    padding-block: 3px;
-    font-size: 1.2em;
+    font-size: 3.8em;
     text-align: center;
+    line-height: 90vh;
+    background: #9a72f86c;
 }
 
-.about strong {
-    color: var(--vermelho);
+.hero h1 {
+    font-family: var(--font-title);
 }
 
-.
+.expo img {
+    width: 40%;
+    height: 300px;
+}
+
+footer {
+
+}
+
